@@ -8,9 +8,95 @@ body {
   background-image: url('./bg-main.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.userPic{
+  display: flex;
+  justify-content: center;
+
+}
+.userPic img{
+  border-radius: 1000%;
+  margin-top: 30px;
+
+}
+
+.mainDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* width: 100%; */
+  /* height: 100%; */
+  /* height: 100vh; */
+  }
+  .first_Div{
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: -3;
+    font-size: 4rem;
+    color: #526842;
+    margin-top: 80px;
+  
+  }
+  .span{
+    margin-left: 80px;
+  }
+  .repo{
+    color: #526842;
+    padding-left: 10px;
+  }
+  input{
+    /* padding: 0 30px; */
+    width: 220px;
+    font-size: 20px;
+    border: none;
+    text-align: center;
+    background: transparent;
+    outline: none;
+    border-bottom: 2px solid #526842;
+    padding-bottom: 8px;
+    color: #fff;
+  }
+  button:hover{
+    transition: 1s all;
+    /* transform: ; */
+    background-color: #526842;
+    /* background: transparent; */
+    outline: transparent;
+  }
+  button{
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 10px 30px;
+    margin-left: 45px;
+    border: 2px solid #526842;
+    background: none;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  .dummyPara{
+    margin-top: -50px;
+    margin-bottom: 15px;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+  }
+/* ================Loading Animation================== */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
