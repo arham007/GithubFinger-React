@@ -7,17 +7,17 @@ const Data=(props)=>{
     let name=props.asname;
 
     let [apidata,setapiData]=useState("");
-//      useEffect(()=>{
-//     fetch(`https://api.github.com/users/${name}`)
-//     .then((res)=>{
-//       return res.json();
-//     })
-//     .then((data)=>{
-//       console.log(data)
-//       setapiData(data)
+     useEffect(()=>{
+    fetch(`https://api.github.com/users/${name}`)
+    .then((res)=>{
+      return res.json();
+    })
+    .then((data)=>{
+      console.log(data)
+      setapiData(data)
 
-//     })
-//   },[props.asname])
+    })
+  },[props.asname])
 
     return(
         <>
