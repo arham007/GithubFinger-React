@@ -11,7 +11,12 @@ function App() {
        <p>UserFinder for <br /> <span>github</span></p>
      </div>
      
+    <div className="changing">
+      <div>
+        <input type="text" />
+      </div>
 
+    </div>
 
    </div>
    </>
