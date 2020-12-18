@@ -32,7 +32,7 @@ const Profile=(props)=>{
   <div style={{marginLeft:"100px"}}>
       <div>Following : <span  className="repo">{props.datas.following}</span></div>
 
-      <div>Location : <span  className="repo">{props.datas.loaction}</span></div>
+      <div>Location : <span  className="repo">{props.datas.location}</span></div>
   </div>
     </div>
     <br />
